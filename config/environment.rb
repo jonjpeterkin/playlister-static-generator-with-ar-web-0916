@@ -1,6 +1,8 @@
 require 'bundler/setup'
 Bundler.require
 
+require_relative '../app/models/sluggafiable.rb'
+
 ENV["PLAYLISTER_ENV"] ||= "development"
 
 Dir[File.join(File.dirname(__FILE__), "../lib/support", "*.rb")].each {|f| require f}

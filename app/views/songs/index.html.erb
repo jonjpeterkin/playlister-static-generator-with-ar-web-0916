@@ -1,0 +1,15 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+	<title>ALL SONGZZ UP IN YO FACE</title>
+</head>
+
+<body>
+	<p><% @songs.each do |song| %>
+		<a href="/<%= song.artist.name %> - <%= song.name%> - <%= song.genre.name%>/"><%= song.name %><a>
+		<% end %>
+	</p>
+</body>
+
+</html>

@@ -17,7 +17,6 @@ describe "genres/index.html.erb", type: :view do
 
   it "displays links to all genres" do
     rendered = ERB.new(html).result(binding)
-
     expect(rendered).to match(/genres\/country.html/)
     expect(rendered).to match(/genres\/pop.html/)
     expect(rendered).to match(/country/)

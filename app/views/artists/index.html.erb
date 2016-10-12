@@ -1,0 +1,15 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+	<title>ALL ARTISTS UP IN YO FACE</title>
+</head>
+
+<body>
+	<p><% @artists.each do |artist| %>
+		<a href="<% artist.id %>"><%= artist.name %><a>
+		<% end %>
+	</p>
+</body>
+
+</html>
